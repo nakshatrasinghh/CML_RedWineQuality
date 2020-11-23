@@ -25,5 +25,18 @@ jobs:
           # run the training script in the VE created using docker as a whole stack
           python train.py
           
-          echo "MODEL METRICS"
-          cat metrics.txt
+          # creating a markdown report document
+          echo "## Model Metrics" > report.md
+          
+          # appending to report document
+          cat metrics.txt >> report.md
+          
+          # printing data visuals and appendinf to report
+          echo "## Data Vizuals" >> report.md
+          
+          # publishing plot created by training script, specifying the flag as markdown,
+          # and pinning it to report.md
+          cml-publish feature_importance.png --md >> report.md
+          
+          # delivering the report
+          cml-send-comment report.md
