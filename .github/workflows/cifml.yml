@@ -1,0 +1,42 @@
+# workflow name
+name: CML_Wine-Model-Quality
+# specifying a trigger 
+on: [push]
+jobs:
+  run:
+    # run on ubuntu OS 
+    runs-on: [ubuntu-latest]
+    # using a CML project docker container
+    container: docker://dvcorg/cml-py3:latest
+    steps:
+        # using a github action script
+      - uses: actions/checkout@v2
+        # naming the step
+      - name: cml_run
+        # checking credentials for authentication repo in secrets
+        env:
+          repo_token: ${{ secrets.GH_TOKEN }}
+        # Your ML workflow
+        run: |
+          
+          # installs the requirements in a docker container(Kubernetes can also be used)
+          pip install -r requirements.txt
+          
+          # run the training script in the VE created using docker as a whole stack
+          python train.py
+          
+          # creating a markdown report document
+          echo "## Model Metrics" > report.md
+          
+          # appending to report document
+          cat metrics.txt >> report.md
+          
+          # printing data visuals and appendinf to report
+          echo "## Data Vizuals" >> report.md
+          
+          # publishing plot created by training script, specifying the flag as markdown,
+          # and pinning it to report.md
+          cml-publish feature_importance.png --md >> report.md
+          
+          # delivering the report
+          cml-send-comment report.md
