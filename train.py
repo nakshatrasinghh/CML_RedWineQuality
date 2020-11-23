@@ -19,7 +19,7 @@ y = df.pop("quality")
 X_train, X_test, Y_train, Y_test = train_test_split(df, y, test_size=0.25, random_state=SEED)
 
 #@ Storing the Random Forest Regressor Model in a variable
-model = RandomForestRegressor(max_depth=11, random_state=SEED)
+model = RandomForestRegressor(max_depth=20, random_state=SEED)
 
 #@ Fitting the model on our training set 
 model.fit(X_train, Y_train)
