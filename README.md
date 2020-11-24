@@ -40,3 +40,17 @@ Whenever my collaborators propose some changes in the code, they can create a pu
 
 ![](imgs/2.png)
 
+## Message Me
+If you have any doubts feel free to click on the social icon you would like to connect with 🤗
+<p align="left">
+<a href="https://www.linkedin.com/in/nakshatrasinghh/"><img height="42" src="https://user-images.githubusercontent.com/53419293/96712764-3e4e5600-13bd-11eb-81e6-50b8c7ea07eb.png?raw=true"></a>&nbsp;&nbsp;
+<a href="https://github.com/nakshatrasinghh"><img height="42" src="https://user-images.githubusercontent.com/53419293/96712562-f7606080-13bc-11eb-86dd-b91470be7b55.png?raw=true"></a>&nbsp;&nbsp;
+<a href="https://www.snapchat.com/add/nxkshxtrx.singh"><img height="42" src="https://user-images.githubusercontent.com/53419293/96713786-c41ed100-13be-11eb-9c21-f4d3b0c36220.png?raw=true"></a>&nbsp;&nbsp;
+<a href="https://wa.link/8bt67v"><img height="42" src="https://user-images.githubusercontent.com/53419293/96714143-59ba6080-13bf-11eb-8f52-3123014be2da.png?raw=true"></a>&nbsp;&nbsp;
+</p>
+
+## Support Me
+If you liked my work and gained **insightful knowledge**, you can buy me a coffee buying click the button below 😊
+
+<a href="https://www.buymeacoffee.com/nakshatrasinghh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-red.png" alt="Buy Me A Coffee" img height="49"></a>
+
