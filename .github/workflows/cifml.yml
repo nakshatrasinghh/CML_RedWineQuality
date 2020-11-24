@@ -36,7 +36,7 @@ jobs:
           
           # publishing plot created by training script, specifying the flag as markdown,
           # and pinning it to report.md
-          cml-publish feature_importance.png --md >> report.md
+          cml-publish feature_importance.png --show-md >> report.md
           
           # delivering the report
           cml-send-comment report.md
